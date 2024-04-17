@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Mari Cayabyab Portfolio</title>
+    <link rel="icon" type="image/jpg" href="logo 5.jpg"></a>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/score.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
+        </a>
+            <nav class="navbar">
+                <a href="index.html "> Home </a>
+                <a href="Education.html" > Education </a>
+                <a href="Portfolio.html" class="active"> Portfolio </a>
+                <a href="Contact.html"> Contact </a>
+            </nav>
+        </header>
+        <div class="defHeader"></div>
+        <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
+        <div class="backBtn">Back</h3></div></a>
+        <div class="scoreContent">
+            <h1>-SCOREBOARD-</h1>
+            <div class="scoreContainer"> 
+                <table>
+                <tr>
+                    <td><h2>TEAM 1</h2></td>
+                    <td><h2>TEAM 2</h2></td>
+                </tr>
+                
+                <tr>
+                    <td><input id="team1Score" readonly></td>
+                    <td><input id="team2Score" readonly></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addScore1()">+ 1</button></td>
+                    <td><button onclick="addScore2()">+ 1</button></td>
+                </tr>
+                </table>
+                </div>
+            <div class="settings">
+                <h3>SET WINNING SCORE</h3>
+                <input type="number" id="winningScore">
+            </div>
+        </div>
+    <script src="javascripts/score.js"></script>
+</body>
+</html>
