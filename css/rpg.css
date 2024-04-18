@@ -1,0 +1,53 @@
+.rpgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    left: 50%;
+    background-color: #031540;
+}
+.rpgBox{
+    background-color: #00abf0;
+    height: 800px;
+    width: 1300px;
+    font-size: 2.5rem;
+    padding: 40px;
+    border-radius: 15%;
+    letter-spacing: 5px;
+}
+.rpgBox h2{
+    color: rgb(166, 255, 0);
+    font-weight: bolder;
+}
+
+.rpgBox input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.rpgBox input[type="number"] {
+    font-size: 2.5rem;
+    width: 200px;
+    height: 40px;
+}
+.rpgBox button{
+    background-color: rgb(166, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(675px, -250px);
+    font-size: 2.5rem;
+    width: 250px;
+    height: 250px;
+    outline: 5px solid black;
+    cursor: pointer;
+}
+#copyBtn{
+    background-color: rgb(166, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(950px, -250px);
+    font-size: 2.5rem;
+    width: 250px;
+    height: 250px;
+}

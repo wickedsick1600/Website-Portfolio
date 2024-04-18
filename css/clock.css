@@ -1,0 +1,41 @@
+#clockCont{
+    margin: 0;
+    background-color: #031540;
+    width: 100%;   
+}
+h1{
+    position: absolute;
+    left: 20%;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    font-size: 50px;
+}
+#clockContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 92vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 35%;
+    height: 15%;
+    background-color: grey;
+}
+button{
+    position: absolute;
+    background-color: black;
+    color: red;
+    top: 70%;
+    height: 75px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
