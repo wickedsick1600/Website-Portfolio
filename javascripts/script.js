@@ -30,3 +30,7 @@ gradPic2.addEventListener("mouseout", () => {
 function copy (value){
     navigator.clipboard.writeText(value);
 }
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
