@@ -24,9 +24,20 @@
             <a href="Contact.html" class="active"> Contact </a>
 
         </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="index.html">-- HOME --</a></li>
+            <li><a href="Education.html">-- EDUCATION --</a></li>
+            <li><a href="Portfolio.html">-- PORTFOLIO --</a></li>
+            <li><a href="Contact.html">-- CONTACT --</a></li>
+        </ul>
+    </div>
     </header>
     <div class="defHeader"></div>
-    <section class="contactBg">
+    <div class="contactBg">
         <div class="feedback-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="feedback-left">
                 <div class="feedback-left-title">
@@ -47,7 +58,7 @@
                 </p>                
             </div>
         </div>
-    </section>
+    </div>
     
     <script src="javascripts/script.js"></script>
 </body>
