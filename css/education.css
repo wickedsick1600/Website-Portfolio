@@ -20,6 +20,9 @@ html, body {
     align-items: center;
     z-index: 100;
 }
+.header{
+    background-color: black;
+}
 .navbar a{
     font-size: 1.10rem;
     color: white;
