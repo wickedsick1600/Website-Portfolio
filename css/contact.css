@@ -11,7 +11,7 @@ html, body {
     background-image: linear-gradient(rgb(0, 0, 0), rgb(243, 243, 243), rgb(0, 0, 0));
 }
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,6 +21,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: black;
 }
 .navbar a{
     font-size: 1.10rem;
@@ -81,17 +82,6 @@ html, body {
     display: block;
     }
 }
-.defHeader{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 8%;
-    background-color:rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-}
 #logo{
     border-radius: 50%;
     height: auto;
@@ -107,6 +97,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 5%;
     gap: 2rem;
 }
 .feedback-left{
@@ -125,6 +116,7 @@ html, body {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     color: white;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 .feedback-left-title hr{
     border: none;
@@ -192,6 +184,7 @@ html, body {
 .feedback-right h2{
     font-size: 2em;
     font-weight: bolder;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 .feedback-right i{
     cursor: pointer;
