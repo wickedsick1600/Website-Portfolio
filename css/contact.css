@@ -180,6 +180,7 @@ html, body {
     letter-spacing: 0.1rem;
     color: white;
     list-style-type: none;
+    text-decoration: none;
 }
 .feedback-right h2{
     font-size: 2em;
