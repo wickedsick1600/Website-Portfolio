@@ -7,9 +7,13 @@ body{
 }
 h1{
     color: tomato;
+    font-size: 2rem;
+}
+#weatherBack{
+    width: 100%;
 }
 .weatherForm{
-    margin: 20px;
+    margin: 0.2rem;
 }
 .cityInput{
     padding: 10px;
@@ -18,7 +22,7 @@ h1{
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
-    width: 300px;
+    width: 15rem;
 }
 button[type="submit"]{
     padding: 10px 20px;
@@ -29,9 +33,6 @@ button[type="submit"]{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-button[type="submit"]:hover{
-
 }
 .card{
     background: linear-gradient(180deg, blue, white);
@@ -44,17 +45,17 @@ button[type="submit"]:hover{
     align-items: center;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 25px;
 
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 5px 0;
 }
 .cityDisplay, .tempDisplay{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: yellow;
     margin-bottom: 25px;
@@ -66,14 +67,27 @@ p{
 .descDisplay{
     font-style: italic;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .weatherEmoji{
     margin: 0;
-    font-size: 7.5rem;
+    font-size: 7rem;
 }
 .errorDisplay{
     font-size: 2.5rem;
     font-weight: bold;
     color: black;
+}
+
+@media only screen and (max-width: 800px){
+    h1{
+        font-size: 2rem;
+    }
+    .cityInput{
+        width: 100%;
+        margin: 0;
+    }
+    button{
+        width: 100%;
+    }
 }

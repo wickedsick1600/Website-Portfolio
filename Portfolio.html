@@ -10,52 +10,58 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
-    
+        <header class="header">
+            <a href="index.html" style="text-decoration: none; display: inline-block;">
+                <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
+            </a>
+                <nav class="navbar">
+                    <a href="index.html "> Home </a>
+                    <a href="Education.html"> Education </a>
+                    <a href="Portfolio.html" class="active"> Portfolio </a>
+                    <a href="Contact.html"> Contact </a>
+                </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">-- HOME --</a></li>
+                    <li><a href="Education.html">-- EDUCATION --</a></li>
+                    <li><a href="Portfolio.html">-- PORTFOLIO --</a></li>
+                    <li><a href="Contact.html">-- CONTACT --</a></li>
+                </ul>
+            </div>
+        </header>
 </head>
 <body>
-    <header class="header">
-    <a href="index.html" style="text-decoration: none; display: inline-block;">
-        <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
-    </a>
-        <nav class="navbar">
-            <a href="index.html "> Home </a>
-            <a href="Education.html"> Education </a>
-            <a href="Portfolio.html" class="active"> Portfolio </a>
-            <a href="Contact.html"> Contact </a>
-
-        </nav>
-    </header>
-    <div class="defHeader"></div>
     <div class="portContainer">
-        <img src="images/collab.png" id="collab">
         <img src="images/cs50.jpeg" id="cs50">
         <img src="images/cert.png" id="cert">
-        <img src="images/brocode.png" id="brocode">
+        <img src="images/brocode.jpeg" id="brocode">
         <img src="images/mosh.png" id="mosh">
         
         <div class="portText"> 
-            <h2>TECH BACKGROUND</h2><br><br>
-            I’ve been hands-on with technology from a young age, starting with my first computer at age 7. 
+            <h2>TECH BACKGROUND</h2><br>
+            I have been hands-on with technology from a young age, starting with my first computer at age 7. 
             I often played games on devices that weren’t top-of-the-line, which taught me how to adjust and 
-            fine-tune them to work better. Through this, I’ve gained a solid understanding of basic computer
+            fine-tune them to work better. Through this, I have gained a solid understanding of basic computer
             fixes and how to get around a PC’s settings and programs.<br><br>
             
             Fast forward to today, and I am now exploring career opportunities in the tech industry. 
-            I’ve taken online courses from Coursera and Harvard’s CS50 and watched countless tech videos. 
-            These steps have built a solid foundation in computer science and set me on the path to turning 
+            I have taken online courses from Coursera and Harvard’s CS50, and watched countless tech videos. 
+            These steps have built my solid foundation in computer science and set me on the path to turning 
             my passion into a profession.
         </div>
-        
     </div>
-    <div id="portSamplesTitle"><h2 id="projectText">PROJECTS</h2>(Click to view sample)</div><hr>
-    <div class="portSamples">
-        <a href="index.html" ><div class="portImg" id="websitePortfolio"><img src="images/web.jpg" > </div></a>
-        <a href="rpg.html" ><div class="portImg" id="password"><img src="images/password.png"></div></a>
-        <a href="weatherApp.html"><div class="portImg" id="weatherApp"><img src="images/weather.webp"></div></a>
-        <a href="calculator.html"><div class="portImg" id="calculator"><img src="images/calculator.jpg"></div></a>
-        <a href="clock.html"><div class="portImg" id="clock"><img src="images/clock.jpg"></div></a>
-        <a href="score.html"><div class="portImg" id="scoring"><img src="images/scoring.jpg"></div></a>
-    </div>
+    <div id="portSamplesTitle"><h2 id="projectText">PROJECTS</h2></div><hr>
+        <div class="portSamples">
+            <a href="index.html" ><h3>Website Portfolio</h3><div class="portImg" id="websitePortfolio"><img src="images/web.jpg" ></div></a>
+            <a href="rpg.html" ><h3>Password Generator</h3><div class="portImg" id="password"><img src="images/password.png"></div></a>
+            <a href="weatherApp.html"><h3>Weather App</h3><div class="portImg" id="weatherApp"><img src="images/weather.webp"></div></a>
+            <a href="calculator.html"><h3>Calculator</h3><div class="portImg" id="calculator"><img src="images/calculator.jpg"></div></a>
+            <a href="clock.html"><h3>Clock</h3><div class="portImg" id="clock"><img src="images/clock.jpg"></div></a>
+            <a href="score.html"><h3>Scoring Program</h3><div class="portImg" id="scoring"><img src="images/scoring.jpg"></div></a>
+        </div>
 
     <script src="javascripts/port.js"></script>
 </body>

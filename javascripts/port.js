@@ -55,3 +55,6 @@ clock.addEventListener("mouseout", () => {
     projectText.textContent = 'PROJECTS';
 })
 
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

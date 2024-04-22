@@ -99,3 +99,7 @@ function displayError(message){
     card.style.display = "flex";
     card.appendChild(errorDisplay);
 }
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

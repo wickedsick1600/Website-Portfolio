@@ -11,9 +11,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
-    
-</head>
-<body>
     <header class="header">
         <a href="index.html">
             <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
@@ -24,20 +21,34 @@
                 <a href="Portfolio.html" class="active"> Portfolio </a>
                 <a href="Contact.html"> Contact </a>
             </nav>
-        </header>
-        <div class="defHeader"></div>
-        <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
-        <div class="backBtn">Back</h3></div></a>
-        
-        <div id="clockCont">
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">-- HOME --</a></li>
+                    <li><a href="Education.html">-- EDUCATION --</a></li>
+                    <li><a href="Portfolio.html">-- PORTFOLIO --</a></li>
+                    <li><a href="Contact.html">-- CONTACT --</a></li>
+                </ul>
+            </div>
+     </header>
+    
+</head>
+<body>
+    <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
+    <div class="backBtn"></h3></div></a>
+
+    <div class="clockTitle">
         <h1>-DIGITAL CLOCK PROGRAM-</h1>
-        <div id="clockContainer">
-            <div id="clock">00:00:00</div>
-            <button type="submit"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO GO BACK IN TIME</button></a>
-        </div>
-        </div>
-
-
+    </div>
+    
+    <div id="clockContainer">
+        <div id="clock">00:00:00 NN</div>
+    </div>
+    <div class="timeCont">
+        <button id="btn">CLICK TO GO BACK IN TIME</button>
+    </div>
     <script src="javascripts/clock.js"></script>
 </body>
 </html>

@@ -1,53 +1,52 @@
 .rpgContainer{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 92%;
-    left: 50%;
-    background-color: #031540;
+    margin: auto;
 }
 .rpgBox{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
     background-color: #00abf0;
-    height: 800px;
-    width: 1300px;
-    font-size: 2.5rem;
-    padding: 40px;
+    width: 50%;
+    padding: 2.5rem;
     border-radius: 15%;
-    letter-spacing: 5px;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 .rpgBox h2{
+    position: relative;
     color: rgb(166, 255, 0);
     font-weight: bolder;
 }
-
 .rpgBox input[type="checkbox"]{
-    width: 30px;
-    height: 30px;
+    position: relative;
+    width: 1.5rem;
+    height: 2rem;
     cursor: pointer;
 }
 .rpgBox input[type="number"] {
-    font-size: 2.5rem;
-    width: 200px;
-    height: 40px;
+    position: relative;
+    font-size: 1.5rem;
+    width: 10rem;
 }
 .rpgBox button{
-    background-color: rgb(166, 255, 0);
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(675px, -250px);
-    font-size: 2.5rem;
-    width: 250px;
-    height: 250px;
-    outline: 5px solid black;
+    position: relative;
+    width: 15rem;
+    outline: 1px solid black;
     cursor: pointer;
+    font-weight: bold;
 }
-#copyBtn{
-    background-color: rgb(166, 255, 0);
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(950px, -250px);
-    font-size: 2.5rem;
-    width: 250px;
-    height: 250px;
+@media only screen and (max-width: 800px){
+    .rpgContainer{
+        position: relative;
+        top: 10%;
+    }
+    .rpgBox{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        font-size: 0.8rem;
+        border-radius: 0;
+    }
 }

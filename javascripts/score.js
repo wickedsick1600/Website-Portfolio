@@ -26,6 +26,11 @@ function addScore1 (){
 function addScore2 (){
     team2Score.value++;
     checkWinner();
-    
 }
-
+function reset(){
+    team1Score.value = 0;
+    team2Score.value = 0;
+}
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

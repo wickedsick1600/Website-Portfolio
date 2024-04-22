@@ -11,25 +11,42 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
-    
-</head>
-<body>
     <header class="header">
         <a href="index.html">
             <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
         </a>
-            <nav class="navbar">
-                <a href="index.html "> Home </a>
-                <a href="Education.html" > Education </a>
-                <a href="Portfolio.html" class="active"> Portfolio </a>
-                <a href="Contact.html"> Contact </a>
-            </nav>
-        </header>
-        <div class="defHeader"></div>
+        <nav class="navbar">
+            <a href="index.html "> Home </a>
+            <a href="Education.html" > Education </a>
+            <a href="Portfolio.html" class="active"> Portfolio </a>
+            <a href="Contact.html"> Contact </a>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">-- HOME --</a></li>
+                <li><a href="Education.html">-- EDUCATION --</a></li>
+                <li><a href="Portfolio.html">-- PORTFOLIO --</a></li>
+                <li><a href="Contact.html">-- CONTACT --</a></li>
+            </ul>
+        </div>
+    </header>
+
+</head>
+<body>
         <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
-        <div class="backBtn">Back</h3></div></a>
-        <div class="scoreContent">
+        <div class="backBtn"></h3></div></a>
+        <div class="scoreTitle">
             <h1>-SCOREBOARD-</h1>
+        </div>
+        <div class="scoreContent">
+            <div class="settings">
+                <td><button onclick="reset()">RESET SCORE</button></td>
+                <input type="number" id="winningScore">
+                <h3>SET WINNING SCORE</h3>
+            </div>
             <div class="scoreContainer"> 
                 <table>
                 <tr>
@@ -46,10 +63,6 @@
                     <td><button onclick="addScore2()">+ 1</button></td>
                 </tr>
                 </table>
-                </div>
-            <div class="settings">
-                <h3>SET WINNING SCORE</h3>
-                <input type="number" id="winningScore">
             </div>
         </div>
     <script src="javascripts/score.js"></script>

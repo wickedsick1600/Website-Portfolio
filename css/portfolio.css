@@ -6,16 +6,16 @@
 }
 html, body {
     height: -webkit-fill-available;
-    overflow: hidden;
+    overflow: scroll;
+    background-color: #031540;
+    overflow-x: hidden;
 }
 img{
     display: block;
     width: 100%;
 }
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: sticky;
     width: 100%;
     padding: 20px 10px;
     background: transparent;
@@ -23,6 +23,7 @@ img{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: black;
 }
 .navbar a{
     font-size: 1.10rem;
@@ -35,16 +36,53 @@ img{
 .navbar a.active {
     color: #00abf0;
 }
-.defHeader{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 8%;
-    background-color:rgb(0, 0, 0);
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .mobile-menu {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 10%;
+    justify-content: flex-start;
+    opacity: 100%;
+    border-radius: 1rem;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    background-color: #031540;
+}
+.mobile-menu a{
+    color: white;
+    justify-content: right;
+    text-decoration: none;
+}
+  
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+  
+@media only screen and (max-width: 800px) {
+    header nav {
+    display: none;
+    }
+    
+    #hamburger-icon {
+    display: block;
+    }
 }
 #logo{
     border-radius: 50%;
@@ -57,24 +95,22 @@ img{
     box-shadow: 0 0 20px #00abf0;
 }
 .portContainer{
-    background-color: #00a1e0;
+    background-color: black;
     position: relative;
-    height: 63vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .portText{
-    position: absolute;
-    background-color: #031540;
-    color: white;
-    top: 48%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 500px;
+    position: relative;
+    background-color: #00abf0;
+    color: black;
     border-radius: 10%;
-    padding: 25px;
-    font-size: 23px;
+    width: 35%;
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 1.20rem;
 }
 .portText h2{
     text-align: center;
@@ -82,71 +118,62 @@ img{
 }
 #cs50{
     position: absolute;
-    max-width: 80%;
-    max-height: 80%;
-    top: 4%;
+    height: 70%;
+    width: 25%;
+    top: 8%;
     left: 2%;
     border-radius: 50px;
     opacity: 80%;
-    animation: fadeIn 1s ease-in-out
+    animation: fadeIn 1s ease-in-out;
 }
 #cert{
     position: absolute;
-    max-width: 60%;
-    max-height: 60%;
-    top: 35%;
+    height: 60%;
+    width: 20%;
+    top: 30%;
     left: 8%;
-    animation: fadeIn 2s ease-in-out
+    animation: fadeIn 2s ease-in-out;   
 }
 #brocode{
     position: absolute;
-    max-width: 70%;
-    max-height: 70%;
-    top: 4%;
-    left: 60%;
+    height: 60%;
+    width: 25%;
+    top: 10%;
+    right: 2%;
     opacity: 90%;
     border-radius: 50px;
     animation: fadeIn 1s ease-in-out
 }
 #mosh{
     position: absolute;
-    top: 40%;
-    right: 4%;
-    max-width: 55%;
-    max-height: 55%;
+    height: 45%;
+    width: 20%;
+    top: 45%;
+    right: 8%;
     opacity: 90%;
     border-radius: 50px;
     animation: fadeIn 2s ease-in-out
-}
-#collab{
-    position: absolute;
-    top: 6%;
-    right: 4%;
-    max-width: 55%;
-    max-height: 55%;
-    opacity: 90%;
-    border-radius: 50px;
-    animation: fadeIn 1s ease-in-out
 }
 .portSamples{
     position: relative;
-    height: 25vh;
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #031540;
     color: white;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 1em;
+    gap: 1em;
+}
+.portSamples h3{
+    text-decoration: none;
+    color: white;
 }
 .portSamples img{
     background-color: white;
-    width: 125px;
-    height: 125px;
+    width: 7em;
+    height: 7em;
     outline: none;
     border-radius: 20%;
-    margin: 50px;
-    animation: fadeIn 2s ease-in-out
+    animation: fadeIn 2s ease-in-out;
 }
 .portSamples img:hover{
     box-shadow: 0 0 40px #00abf0;
@@ -158,15 +185,73 @@ img{
     background-color: #031540;
     font-size: 1.5em;
 }
-.backBtn{
-    position: absolute;
-    color: blue;
-    font-size: 33px;
-    left: 2%;
-}
 .backArrow{
-    position: absolute;
-    color: blue;
-    font-size: 2em;
+    position: sticky;
     left: 0;
+    top: 0;
+    color: rgb(255, 187, 0);
+    font-size: 2em;
+    display: inline-block;
+}
+@media only screen and (max-width: 800px){
+    .portText{
+        position: relative;
+        background-color: #00abf0;
+        color: black;
+        border-radius: 10%;
+        width: 100%;
+        margin: auto;
+        font-size: 1.20rem;
+    }
+    .portText h2{
+        text-align: center;
+    
+    }
+    #cs50{ 
+        display: none;
+    }
+    #cert{
+        display: none;
+    }
+    #brocode{
+        display: none;
+    }
+    #mosh{
+        display: none;
+    }
+    .portSamples{
+        position: relative;
+        width: 100%;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+        gap: 1em;
+    }
+    .portSamples img{
+        background-color: white;
+        width: 50%;
+        outline: none;
+        border-radius: 20%;
+        animation: fadeIn 2s ease-in-out;
+    }
+    .portSamples img:hover{
+        box-shadow: 0 0 40px #00abf0;
+        cursor: pointer;
+    }
+    #portSamplesTitle {
+        color: white;
+        text-align: center;
+        background-color: #031540;
+        font-size: 1.5em;
+    }
+    .backArrow{
+        position: sticky;
+        color: rgb(255, 187, 0);
+        font-size: 2em;
+        display: inline-block;
+        top: 0;
+        left: 0;
+    }
 }

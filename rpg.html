@@ -12,49 +12,57 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
-    
-</head>
-<body>
     <header class="header">
         <a href="index.html">
             <img src="images/logo 1.jpg" alt="Your Logo" id="logo">
         </a>
-            <nav class="navbar">
-                <a href="index.html "> Home </a>
-                <a href="Education.html" > Education </a>
-                <a href="Portfolio.html" class="active"> Portfolio </a>
-                <a href="Contact.html"> Contact </a>
-    
-            </nav>
-        </header>
-        <div class="defHeader"></div>
-        <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
-        <div class="backBtn">Back</h3></div></a>
-        
-        <div class="rpgContainer">
-            <div class="rpgBox">
-            <form action="">
-                <h1>-Random Password Generator-</h1><br>
-                <input type="number" id="passwordLengthVal" class="rpgInput">
-                    <label for="passwordLengthVal"> Password Length</label><br>
-                <input type="checkbox" id="includeLowercaseVal" class="rpgInput">
-                    <label for="includeLowercaseVal">Include Lower Case Letters</label><br>
-                <input type="checkbox" id="includeUppercaseVal" class="rpgInput">
-                    <label for="includeUppercaseVal">Include Upper Case Letters</label><br>
-                <input type="checkbox" id="includeNumberVal" class="rpgInput">
-                    <label for="includeNumberVal">Include Numbers</label><br>
-                <input type="checkbox" id="includeSymbolVal" class="rpgInput">
-                    <label for="includeSymbolVal">Include Symbols</label><br>
+        <nav class="navbar">
+            <a href="index.html "> Home </a>
+            <a href="Education.html" > Education </a>
+            <a href="Portfolio.html" class="active"> Portfolio </a>
+            <a href="Contact.html"> Contact </a>
 
-                <button type="submit" id="generateBtn">Generate Password</button>
-                <button type="submit" id="copyBtn">Copy Generated Password</button>
-                    <h1>Generated Password: </h1><br>
-                    <h2 id="result"></h2>
-            </form>
-            </div>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">-- HOME --</a></li>
+                <li><a href="Education.html">-- EDUCATION --</a></li>
+                <li><a href="Portfolio.html">-- PORTFOLIO --</a></li>
+                <li><a href="Contact.html">-- CONTACT --</a></li>
+            </ul>
         </div>
+    </header>
+</head>
+<body>
+    <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
+    <div class="backBtn"></div></a>
+    
+    <div class="rpgContainer">
+        <div class="rpgBox">
+        <form action="">
+            <h1>-Random Password Generator-</h1><br>
+            <input type="number" id="passwordLengthVal" class="rpgInput">
+                <label for="passwordLengthVal"> Password Length</label><br>
+            <input type="checkbox" id="includeLowercaseVal" class="rpgInput">
+                <label for="includeLowercaseVal">Include Lower Case Letters</label><br>
+            <input type="checkbox" id="includeUppercaseVal" class="rpgInput">
+                <label for="includeUppercaseVal">Include Upper Case Letters</label><br>
+            <input type="checkbox" id="includeNumberVal" class="rpgInput">
+                <label for="includeNumberVal">Include Numbers</label><br>
+            <input type="checkbox" id="includeSymbolVal" class="rpgInput">
+                <label for="includeSymbolVal">Include Symbols</label><br><br>
+
+            <button type="submit" id="generateBtn">Generate Password</button><br>
+            <button type="submit" id="copyBtn">Copy Generated Password</button>
+                <h1>Generated Password: </h1><br>
+                <h2 id="result"></h2>
+        </form>
+        </div>
+    </div>
     <script src="javascripts/rpg.js"></script>
     <script src="javascripts/script.js"></script>
-    
 </body>
 </html>

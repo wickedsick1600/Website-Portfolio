@@ -11,5 +11,17 @@ function updateClock(){
     document.getElementById("clock").textContent = timeString;
 }
 
+const btn = document.getElementById("btn");
+
+function playMusic(){
+    let audio = new Audio("images/not.mp3");
+    audio.play();
+}
+btn.addEventListener("click", playMusic);
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
 updateClock();
 setInterval(updateClock, 1000);

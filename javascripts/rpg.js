@@ -26,8 +26,8 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     if (length <= 0){
         return 'Password Length must be at least 1!';
     }
-    else if (length > 30){
-        return 'Password Length must be less than 30 characters!'
+    else if (length > 25){
+        return 'Password Length must be less than 25 characters!'
     }
 
     if (allowedChars.length === 0){
@@ -52,9 +52,6 @@ generateBtn.onclick = function(event) {
 
     let password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
     result.textContent = password;
-
-    
-
 }
 
 copyBtn.onclick = function(event){
