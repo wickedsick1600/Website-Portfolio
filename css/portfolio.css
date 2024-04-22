@@ -6,7 +6,6 @@
 }
 html, body {
     height: -webkit-fill-available;
-    overflow: scroll;
     background-color: #031540;
     overflow-x: hidden;
 }
@@ -16,7 +15,7 @@ img{
 }
 .header{
     position: sticky;
-    width: 100%;
+    width: 100vw;
     padding: 20px 10px;
     background: transparent;
     display: flex;
@@ -100,7 +99,7 @@ img{
     margin: auto;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 .portText{
     position: relative;
@@ -156,12 +155,16 @@ img{
 }
 .portSamples{
     position: relative;
-    width: 100%;
+    width: 100vw;
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 1em;
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 0;
+    gap: 8rem;
+    text-decoration: none;
+}
+.portSamples a{
+    text-decoration: none;
 }
 .portSamples h3{
     text-decoration: none;
@@ -169,8 +172,7 @@ img{
 }
 .portSamples img{
     background-color: white;
-    width: 7em;
-    height: 7em;
+    height: 10rem;
     outline: none;
     border-radius: 20%;
     animation: fadeIn 2s ease-in-out;
@@ -224,10 +226,21 @@ img{
         width: 100%;
         color: white;
         display: grid;
-        align-items: center;
-        justify-content: center;
+
         margin: 1em;
         gap: 1em;
+    }
+    .portSamples{
+        position: relative;
+        width: 100vw;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin: 0;
+        gap: 8rem;
+        text-decoration: none;
     }
     .portSamples img{
         background-color: white;
@@ -253,5 +266,12 @@ img{
         display: inline-block;
         top: 0;
         left: 0;
+    }
+}
+@media only screen and (min-width: 801px){
+    .portSamples h3{
+        text-decoration: none;
+        color: white;
+        display: none;
     }
 }
