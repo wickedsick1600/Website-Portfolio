@@ -55,6 +55,7 @@ img{
     justify-content: flex-start;
     opacity: 100%;
     border-radius: 1rem;
+    z-index: 101;
 }
 .mobile-menu {
     display: none;
@@ -160,7 +161,7 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin: 0;
-    gap: 8rem;
+    gap: 5rem;
     text-decoration: none;
 }
 .portSamples a{
@@ -237,14 +238,14 @@ img{
         display: grid;
         align-items: center;
         justify-content: center;
+        text-align: center;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         margin: 0;
-        gap: 8rem;
+        gap: 5rem;
         text-decoration: none;
     }
     .portSamples img{
         background-color: white;
-        width: 50%;
         outline: none;
         border-radius: 20%;
         animation: fadeIn 2s ease-in-out;
