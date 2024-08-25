@@ -40,7 +40,9 @@ function displayWeatherInfo(data){
 
     const {name: city, 
         main: {temp, humidity}, 
-        weather: [{description, id}]} = data;
+        weather: [{description, id}],
+        sys: {country}} = data;
+        console.log(data)
 
     card.textContent = "";
     card.style.display = "flex";
@@ -51,7 +53,7 @@ function displayWeatherInfo(data){
     const descDisplay = document.createElement("p");
     const weatherEmoji = document.createElement("p");
 
-    cityDisplay.textContent = city;
+    cityDisplay.textContent = `${city}, ${country}`;
     tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
     humidityDisplay.textContent = `Humidity: ${humidity}%`;
     descDisplay.textContent = description;

@@ -39,15 +39,20 @@
         <a href="Portfolio.html" class="active"><div class="backArrow"><h3><i class='bx bx-left-arrow-alt'></i></div>
         <div class="backBtn"></h3></div></a>
         <div class="scoreTitle">
-            <h1>-SCOREBOARD-</h1>
+            <h1>SCORING PROGRAM</h1>
         </div>
         <div class="scoreContent">
             <div class="settings">
-                <td><button onclick="reset()">RESET SCORE</button></td>
-                <input type="number" id="winningScore">
+                
                 <h3>SET WINNING SCORE</h3>
+                <input type="number" id="winningScore" min="0">
             </div>
+            
+            <h1>SCORE BOARD</h1>
+            
             <div class="scoreContainer"> 
+                
+                <td><button onclick="reset()">RESET SCORE</button></td>
                 <table>
                 <tr>
                     <td><h2>TEAM 1</h2></td>
@@ -61,6 +66,7 @@
                 <tr>
                     <td><button onclick="addScore1()">+ 1</button></td>
                     <td><button onclick="addScore2()">+ 1</button></td>
+                    
                 </tr>
                 </table>
             </div>

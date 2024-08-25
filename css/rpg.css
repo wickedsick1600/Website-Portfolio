@@ -11,25 +11,26 @@
     width: 50%;
     padding: 2.5rem;
     border-radius: 15%;
-    gap: 1.5rem;
     font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+}
+h1{
+    text-align: center;
 }
 .rpgBox h2{
     position: relative;
     color: rgb(166, 255, 0);
     font-weight: bolder;
+    text-align: center;
 }
 .rpgBox input[type="checkbox"]{
     position: relative;
-    width: 1.5rem;
-    height: 2rem;
     cursor: pointer;
+    margin: 10px;
 }
 .rpgBox input[type="number"] {
     position: relative;
-    font-size: 1.5rem;
-    width: 10rem;
+    border-radius: 10px;
+    padding: 5px;
 }
 .rpgBox button{
     position: relative;
@@ -44,9 +45,13 @@
         top: 10%;
     }
     .rpgBox{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
         font-size: 0.8rem;
         border-radius: 0;
+        padding: 10px;
     }
+    .rpgBox button{
+        margin: 5px;
+    }
+    
 }

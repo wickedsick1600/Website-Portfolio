@@ -20,6 +20,7 @@ function checkWinner(){
 }
 
 function addScore1 (){
+
     team1Score.value++;
     checkWinner();
 }

@@ -42,24 +42,31 @@
     
     <div class="rpgContainer">
         <div class="rpgBox">
-        <form action="">
-            <h1>-Random Password Generator-</h1><br>
+            <h1>Random Password Generator</h1><br>
+
             <input type="number" id="passwordLengthVal" class="rpgInput">
                 <label for="passwordLengthVal"> Password Length</label><br>
-            <input type="checkbox" id="includeLowercaseVal" class="rpgInput">
-                <label for="includeLowercaseVal">Include Lower Case Letters</label><br>
-            <input type="checkbox" id="includeUppercaseVal" class="rpgInput">
-                <label for="includeUppercaseVal">Include Upper Case Letters</label><br>
-            <input type="checkbox" id="includeNumberVal" class="rpgInput">
-                <label for="includeNumberVal">Include Numbers</label><br>
-            <input type="checkbox" id="includeSymbolVal" class="rpgInput">
-                <label for="includeSymbolVal">Include Symbols</label><br><br>
 
-            <button type="submit" id="generateBtn">Generate Password</button><br>
-            <button type="submit" id="copyBtn">Copy Generated Password</button>
-                <h1>Generated Password: </h1><br>
-                <h2 id="result"></h2>
-        </form>
+            <input type="checkbox" id="includeLowercaseVal" class="rpgInput">
+                <label for="includeLowercaseVal">Lower Case Letters</label><br>
+
+            <input type="checkbox" id="includeUppercaseVal" class="rpgInput">
+                <label for="includeUppercaseVal">Upper Case Letters</label><br>
+
+            <input type="checkbox" id="includeNumberVal" class="rpgInput">
+                <label for="includeNumberVal">Numbers</label><br>
+
+            <input type="checkbox" id="includeSymbolVal" class="rpgInput">
+                <label for="includeSymbolVal">Symbols</label><br><br>
+            <div class="btnCont">
+                <button type="button" id="generateBtn">Generate Password</button><br>
+                    <button type="button" id="copyBtn">Copy Generated Password</button>
+
+            </div>
+            
+            <h1>Generated Password</h1><br>
+            <h2 id="result"></h2>
+
         </div>
     </div>
     <script src="javascripts/rpg.js"></script>
